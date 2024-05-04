@@ -4,9 +4,13 @@ function addToScreen(value) {
 }
 
 function equalTo() {
-  screen.innerHTML = eval(
-    screen.innerHTML.replace("√", "Math.sqrt").replace("^", "**")
-  );
+  try {
+    screen.innerHTML = eval(
+      screen.innerHTML.replace("√", "Math.sqrt").replace("^", "**")
+    );
+  } catch (err) {
+    screen.innerHTML = "Error";
+  }
 }
 
 function clearAll() {
