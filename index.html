@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div id="screen" class="screen"></div>
+      <div class="buttons">
+        <button onclick="clearAll()" class="no-number-buttons">AC</button>
+        <button onclick="clearLast()" class="no-number-buttons">C</button>
+        <button onclick="addToScreen('(')" class="no-number-buttons">
+          &#40;
+        </button>
+        <button onclick="addToScreen(')')" class="no-number-buttons">
+          &#41;
+        </button>
+        <button onclick="addToScreen('/')" class="no-number-buttons">/</button>
+        <button onclick="addToScreen('7')">7</button>
+        <button onclick="addToScreen('8')">8</button>
+        <button onclick="addToScreen('9')">9</button>
+        <button onclick="addToScreen('*')" class="no-number-buttons">*</button>
+        <button onclick="addToScreen('-')" class="no-number-buttons">-</button>
+        <button onclick="addToScreen('4')">4</button>
+        <button onclick="addToScreen('5')">5</button>
+        <button onclick="addToScreen('6')">6</button>
+        <button onclick="addToScreen('+')" class="no-number-buttons">+</button>
+        <button onclick="addToScreen('.')" class="no-number-buttons">.</button>
+        <button onclick="addToScreen('1')">1</button>
+        <button onclick="addToScreen('2')">2</button>
+        <button onclick="addToScreen('3')">3</button>
+        <button onclick="equalTo()" class="equal-button">=</button>
+        <button onclick="addToScreen('^')" class="no-number-buttons">^</button>
+        <button onclick="addToScreen('0')" class="no-number-buttons">0</button>
+        <button onclick="addToScreen('√(')" class="no-number-buttons">√</button>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
